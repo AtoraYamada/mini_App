@@ -1,7 +1,7 @@
 .navbar-fixed
   %nav
     .nav-wrapper
-      %a.brand-logo.center{ href: "#" } MINI App
+      = link_to 'MINI App', root_path, class: 'brand-logo center' 
       %ul#nav-mobile.right.hide-onmed-and-down
         - if user_signed_in?
           %li
