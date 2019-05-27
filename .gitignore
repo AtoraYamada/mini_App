@@ -26,4 +26,13 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+# Ignore files releteion with sass compiling
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
 public/uploads/*
+
+.DS_Store
+*.lock
