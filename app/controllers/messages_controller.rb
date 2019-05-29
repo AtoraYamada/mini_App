@@ -9,12 +9,10 @@ class MessagesController < ApplicationController
   end
 
   def create
-    binding.pry
     @message=Message.new(message_params)
     if @message.save
-      redirect_to root_path
+      redirect_to root_path, notice: 'メッセージが送信されました'
     else
-      @messages=Message.includes(:user)
       flash.now[:alert] = 'メッセージを入力してください'
       render :new
     end
