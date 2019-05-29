@@ -18,6 +18,11 @@ class MessagesController < ApplicationController
     end
   end
   
+  def edit
+    @message=Message.find(params[:id])
+  end
+
+
   private
   def message_params
     params.require(:message).permit(:body, :picture).merge(user_id: current_user.id)
