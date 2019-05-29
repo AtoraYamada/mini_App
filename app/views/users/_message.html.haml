@@ -10,5 +10,5 @@
             = message.body
         .card-action.cyan.accent-3
           -if user_signed_in? && current_user.id == message.user.id
-            %a.white-text{:href => "#"} EDIT
+            = link_to 'EDIT', edit_message_path(message), class: 'white-text'
             %a.white-text{:href => "#"} DELETE
