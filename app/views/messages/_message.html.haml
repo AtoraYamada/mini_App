@@ -1,0 +1,18 @@
+- messages.each do |message|
+  .col.s12.m7
+    %h2.header 
+      = message.user.name
+    .card.horizontal
+      .card-image
+        = image_tag message.picture.url
+      .card-stacked
+        .card-content
+          %p 
+            = message.body
+        .card-action.cyan.accent-3
+          -if user_signed_in?
+            %a.white-text{:href => "#"} USER'S PAGE
+            %a.white-text{:href => "#"} EDIT
+            %a.white-text{:href => "#"} DELETE
+          - else
+            %a.white-text{:href => "#"} USER'S PAGE
