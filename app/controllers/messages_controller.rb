@@ -4,6 +4,9 @@ class MessagesController < ApplicationController
   def index
   end
 
+  def new
+  end
+
   private
   def move_to_index
     redirect_to :index unless user_signed_in?
