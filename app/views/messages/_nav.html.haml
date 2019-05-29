@@ -5,7 +5,7 @@
       %ul#nav-mobile.right.hide-onmed-and-down
         - if user_signed_in?
           %li
-            %a{ href: "#" } New
+            = link_to 'New', new_message_path
           %li
             %a{ href: "#" } My Page
           %li
