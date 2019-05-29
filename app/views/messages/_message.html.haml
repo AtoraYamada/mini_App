@@ -11,6 +11,4 @@
         .card-action.cyan.accent-3
           = link_to user_path(message.user), class: 'grey-text' do
             = message.user.name
-          -if user_signed_in?
-            %a.white-text{:href => "#"} EDIT
-            %a.white-text{:href => "#"} DELETE
+
