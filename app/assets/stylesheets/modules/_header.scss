@@ -1,0 +1,11 @@
+.header {
+  color: white;
+  text-align: center;
+  width: 100vw;
+  &--notice {
+    background-color: #38aef0;
+  }
+  &--alert {
+    background-color: #f35500;
+  }
+}
