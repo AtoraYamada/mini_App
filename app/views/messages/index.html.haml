@@ -1,4 +1,8 @@
-.messages
+.chat
   = render 'nav'
-  = render 'horizontal_card'
+  .messages
+    = render partial: 'message', locals: { messages: @messages }
+.footer
+  = paginate(@messages)
+
 

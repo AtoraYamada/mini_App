@@ -1,4 +1,21 @@
-.messages{
+.chat{
   background-color: #ddffff;
   height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
 }
+
+.messages{
+  padding-top: 64px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.footer{
+  background-color: #ddffff;
+  position: absolute;
+  bottom: 10px;
+}
+
