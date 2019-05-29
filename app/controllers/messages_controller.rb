@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
   before_action :move_to_index, except: :index
 
   def index
-    @messages=Message.includes(:user).order('created_at DESC').page(params[:page]).per(10)
+    @messages=Message.includes(:user).order('created_at DESC').page(params[:page]).per(5)
   end
   
   def new
@@ -12,9 +12,8 @@ class MessagesController < ApplicationController
   def create
     @message=Message.new(message_params)
     if @message.save
-      redirect_to root_path, notice: 'メッセージが送信されました'
+      redirect_to root_path
     else
-      flash.now[:alert] = 'メッセージを入力してください'
       render :new
     end
   end

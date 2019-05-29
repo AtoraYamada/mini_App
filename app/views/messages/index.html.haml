@@ -2,7 +2,6 @@
   = render 'nav'
   .messages
     = render partial: 'message', locals: { messages: @messages }
-.footer
-  = paginate(@messages)
+    = paginate(@messages)
 
 
