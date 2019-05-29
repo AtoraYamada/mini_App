@@ -1,0 +1,14 @@
+- messages.each do |message|
+  .col.s12.m7
+    %h2.header
+    .card.horizontal
+      .card-image
+        = image_tag message.picture.url
+      .card-stacked
+        .card-content
+          %p 
+            = message.body
+        .card-action.cyan.accent-3
+          -if user_signed_in?
+            %a.white-text{:href => "#"} EDIT
+            %a.white-text{:href => "#"} DELETE

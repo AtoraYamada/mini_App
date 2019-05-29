@@ -1,0 +1,99 @@
+.message-form{
+  height: calc(100vh-100px);
+  width: 500px;
+  margin: 100px auto 100px;
+  box-sizing: border-box;
+}
+
+
+/*--------------------------------------
+ファイル選択
+---------------------------------------*/
+
+.msr_file_05 {
+  padding-bottom: 20px;
+  width: 460px;
+  font-size: 20px;
+  color:#9e9e9e;
+}
+
+.msr_file_05 label {
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  cursor: pointer;
+  display:block;
+  font-size:14px;
+  padding: 10px;
+  position:relative;
+  height: 40px;
+  width: 230px;
+}
+.msr_file_05 label::before {
+  content:"＋";
+  color:#333333;
+  font-size:20px;
+  line-height:1;
+  margin-top: -9px;
+  right:10px;
+  position:absolute;
+  top:50%;
+}
+// .msr_file_05 input[type=file] {
+//   display: none;
+// }
+
+
+/*--------------------------------------
+テキストエリア
+---------------------------------------*/
+
+.msr_textarea_05 {
+  padding-bottom: 10px;
+  width: 460px;
+}
+.msr_textarea_05 label {
+  display: block;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+.msr_textarea_05 textarea {
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 15px;
+  padding: 10px;
+  height: 210px;
+  width: 460px;
+}
+
+/*--------------------------------------
+送信ボタン
+---------------------------------------*/
+.msr_sendbtn_05{
+  margin:0 0 10px;
+}
+
+.msr_sendbtn_05 input[type=submit] {
+  background-color: #FFFFFF;
+  border:1px solid #999999;
+  border-radius: 2px;
+  color: #333333;
+  cursor:pointer;
+  display: block;
+  font-size: 14px;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  width: 180px;
+}
+.msr_sendbtn_05 input[type=submit]:hover {
+  background-color: #999999;
+  color: #FFFFFF;
+}

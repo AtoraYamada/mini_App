@@ -1,0 +1,12 @@
+= render 'shared/nav'
+= form_with model: @message, class: 'message-form' do |f|
+  .msr_textarea_05
+    = f.label :body, 'Textarea'
+    = f.text_area :body, placeholder: 'type a message'
+  .msr_file_05
+    %p file
+    = f.label :picture do
+      画像を選択してください
+      = f.file_field :picture, style: 'display:none'
+  %p.msr_sendbtn_05
+    = f.submit 'Send'
