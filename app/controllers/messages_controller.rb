@@ -2,6 +2,7 @@ class MessagesController < ApplicationController
   before_action :move_to_index, except: :index
 
   def index
+    @messages=Message.includes(:user).order('created_at DESC').page(params[:page]).per(15)
   end
   
   def new
