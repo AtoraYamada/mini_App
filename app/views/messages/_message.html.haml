@@ -7,7 +7,7 @@
       .card-stacked
         .card-content
           %p 
-            = message.body
+            = simple_format(h(message.body))
         .card-action.cyan.accent-3
           = link_to user_path(message.user), class: 'grey-text' do
             = message.user.name
