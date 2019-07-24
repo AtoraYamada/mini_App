@@ -68,6 +68,6 @@ gem 'materialize-sass', '~> 1.0.0'
 gem 'material_icons'
 gem 'devise'
 gem 'carrierwave'
-gem 'mini_magick'
+gem 'mini_magick', ">= 4.9.4"
 gem 'pry-rails'
 gem 'kaminari'
